@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+* {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+}
+body {
+        background-color: #011a39;
+        overflow-x: hidden;
+}
+.container {
+        max-width: 1140px;
+        margin: 0 auto;
+}
+
+/* -- -----------------SERVICES ----------------- */
+.services_we_offer{
+    background-color:#00152e;
+    max-width: 100%;
+    padding: 107px 0px 103px 0px;
+    margin-top: -144px;
+    position: relative;
+    z-index: 1;
+}
+.service_flex_1{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.gr_ser{
+    height:601px;
+    width:365px;
+    border: 1px solid rgb(84, 110, 255);
+    border-radius: 20px;
+}
+.gr_ser_cnt{
+    padding: 43px 0px 38px 30px;
+}
+.ser_text h2{
+    font-size:42px;
+    font-weight: 600;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding-top: 29px;
+    padding-bottom: 38px;
+}
+.gr_ser_cnt h3{
+    color: #fff;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    font-size: 21px;
+    padding-top: 19px;
+}
+.gr_ser_cnt p{
+    font-weight:400;
+    font-family: 'Poppins', sans-serif;
+    font-size:16px;
+    color: rgb(207, 217, 228);
+    line-height: 1.563;
+    max-width: 306px;
+    padding-top: 11px;
+}
+ul{
+    list-style: none;
+}
+.list li{
+    font-weight:400;
+    font-family: 'Poppins', sans-serif;
+    font-size:16px;
+    color: rgb(207, 217, 228);
+    max-width: 277px;
+    padding-top: 15px;
+}
+/* .list li::before{
+    content: url('../images/r_icon.png');
+
+    position: absolute;
+} */
+.item{
+    display: flex;
+}
+.item img{
+    width: 15px;
+    height: 15px;
+    margin-top: 21px;
+    margin-right: 10px;
+}
+.analytic_btn{
+    margin-top: 102px;
+}
+.growth_btn{
+    margin-top: 96px;
+}
+.Enterprise_btn{
+    margin-top: 28px;
+}
+.view_details a{
+    font-weight:400;
+    font-family: 'Poppins', sans-serif;
+    font-size:14px;
+    color: #ffffff;
+    text-decoration: none;
+    padding:11px 27px;
+    border: 1px solid #fe7a34;
+    text-transform: uppercase;
+    border-radius: 40px;
+}
+.view_details a:hover{
+    background-image: linear-gradient(90deg, #f8842f, #cf4152);
+}
+.services_flex_2{
+    display: flex;
+    justify-content: center;
+    margin-top: 19px;
+}
+.product{
+    margin-right:16px;
+}
+.product .list , .link .list{
+    padding-top: 35px;
+}
+.product_btn , .link_btn{
+    margin-top: 35px;
+}
+
+/* request purposal btn */
+
+.stra_request_purposal{
+    display: flex;
+    justify-content: center;
+    padding-top: 98px;
+}
+.stra_request_purposal a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    padding:21px 40px;
+    padding-right: 34px;
+    border: 1px solid #f8842f;
+    border-radius: 40px;
+}
+.stra_request_purposal a:hover {
+    background-image: linear-gradient(90deg, #f8842f, #cf4152);
+    transition: 0.5s all;
+    border: 1px solid #f8842f;
+}
+.req_icon {
+    padding-left: 14px;
+}
+
+/* media queries */
+@media(max-width:1120px){
+    .service_flex_1{
+        display: flex;
+        justify-content: center;
+    }
+    .gr_ser{
+        margin-right: 17px;
+        margin-bottom: 22px;
+        margin: 10px auto;
+        max-width: 300px;
+        height: 666px;
+    }
+}
+@media(max-width:787px){
+    .service_flex_1{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .services_flex_2{
+        display: flex;
+        flex-direction: column;
+    }
+    .growth_btn {
+        margin-top: 57px;
+    }
+    .analytic_btn {
+        margin-top: 63px;
+    }
+    .gr_ser{
+        height: 645px;
+    }
+}
