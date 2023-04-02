@@ -1,5 +1,7 @@
     {% extends 'base.html' %}
     {% load static %}
+
+
     {% block title %} Home {% endblock %}
 
 
@@ -8,9 +10,9 @@
     <section class="hero_section">
      <!-- header text -->
      <div class="home_hero container">
-        <h2>Webify is a Fintech focused <span style="color:#ff961c;">SEO Agency.</span> 
+        <h2>"Cultivate Your Brand's Story and Ignite Your Digital Presence: Unleashing the Power of Strategic " <span style="color:#ff961c;">Branding and Marketing</span> 
         </h2>
-        <p>We have hands-on, in the trenches knowledge from building some of the most successful SEO campaigns in the entire finance industry. From technical diagnostics to truly scaled content strategy, we’ve grown organic traffic from 6 and 7 figures to 9 figures.</p>
+        <p>In today’s experience-based market, people embrace brands that reflect their values, needs, and aspirations. By understanding this new landscape, Sania helps clients develop brands that connect with audiences in a deeper way.</p>
         <div class="request_btn">
             <a href="#">request purposal<span class="icon"><img src="assets/images/arrow.png" alt=""></span></a>
         </div>
@@ -18,7 +20,6 @@
     </section>
 
     <!-- ----------------SECTION 1 ---------------- -->
-
     <section class="sec1">
         <div class="container">
             <h2>What Makes Us <span style="color:#ff961c;">Different?</span>
@@ -27,37 +28,37 @@
                 <div class="sec1_box1">
                     <div class="sec1_box1_content">
                         <img src="{% static 'assets/images/sec1_img1.png' %}" alt="">
-                        <p>Founded by <br> In-house <br> marketers</p>
+                        <p>Unique Brand Identities</p>
                     </div>
                 </div>
                 <div class="sec1_box1">
                     <div class="sec1_box1_content">
                         <img src="{% static 'assets/images/sec1_img2.png' %}" alt="">
-                        <p>Hands on <br> experience growing <br> organic traffic to 9 <br> figures per month</p>
+                        <p>Comprehensive Social Media Strategy</p>
                     </div>
                 </div>
                 <div class="sec1_box1">
                     <div class="sec1_box1_content">
-                        <img src="{% static 'assets/images/sec1_img2.png' %}" alt="">
-                        <p>Have ranked <br> pages for the <br> most difficult <br> keywords in SEO</p>
+                        <img src="{% static 'assets/images/sec1_img3.png' %}" alt="">
+                        <p>Certified Google Ads Expertise</p>
                     </div>
                 </div>
                 <div class="sec1_box1">
                     <div class="sec1_box1_content">
-                        <img src="{% static 'assets/images/sec1_img2.png' %}" alt="">
-                        <p>Have managed <br> large-scale <br> content teams <br> and operations</p>
+                        <img src="{% static 'assets/images/sec1_img4.png' %}" alt="">
+                        <p>Results-Oriented Approach <br>Experienced Industry Professional</p>
                     </div>
                 </div>
                 <div class="sec1_box1">
                     <div class="sec1_box1_content">
-                        <img src="{% static 'assets/images/sec1_img2.png' %}" alt="">
-                        <p>Understand the <br> unique role links <br> play in ranking for <br> consumer finance <br>
-                            keywords.</p>
+                        <img src="{% static 'assets/images/sec1_img5.png' %}" alt="">
+                        <p>Experienced Industry Professional</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    
     <!-- -- ----------------SECTION 2 ---------------- -- -->
     <section class="sec2">
         <div class="container">
@@ -312,79 +313,7 @@
 </section>
 
     <!--------------------SECTION 5 -------------------->
-    <section class="section_5">
-    <div class="container">
-        <div class="sec5">
-            <h2>Customer Experiences</h2>
-            <div class="focus">
-                <div class="focus1">
-                    <div class="test_photo">
-                        <img src="{% static 'assets/images/sec5_img1.png' %}" alt="">
-                    </div>
-                    <center>
-                        <div class="sec3_icon">
-                            <p>“</p>
-                        </div>
-                    </center>
-                    <div class="sec3_text def">
-                        <p>Working with Igal is a treat! When it comes to understanding SEO inside out and how to apply
-                            it in organizations of different sizes and industries, he really is the best of the best.
-                        </p>
-                    </div>
-                    <div class="sec3_name">
-                        <p> <b style="color:#ffff;"> Anat Sneh ,</b> Director of Digital
-                            Marketing <br>
-                            Intelligence Solution, SimilarWeb</p>
-                        <div class="test_img">
-                            <img src="{% static 'assets/images/sec5_img3.png' %}" alt="">
-                        </div>
+        {% include 'customerexperience.html' %}
 
-                    </div>
-
-                </div>
-                <div class="focus1">
-                    <div class="test_photo">
-                        <img src="{% static 'assets/images/sec5_img2.png' %}" alt="">
-                    </div>
-                    <center>
-                        <div class="sec3_icon">
-                            <p>“</p>
-                        </div>
-                    </center>
-                    <div class="sec3_text def">
-                        <p>I've been working with Igal for over 8 years, and will recommend his new agency to anyone
-                            who's looking for a genuine organic growth strategy. Igal is not just an SEO expert, he
-                            truly gets International Search, a rare mix of Technical and Marketing-oriented SEO.</p>
-                    </div>
-                    <div class="sec3_name">
-                        <p> <b style="color:#ffff;">Neta Geffen ,</b> Director of Organic
-                            Growth, Miro </p>
-                        <div class="test_img">
-                            <img src="{% static 'assets/images/sec5_img4.png' %}" alt="">
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-    <!--------------------SECTION 6 -------------------->
-    <section class="section_6">
-      <div class="container">
-        <div class="sec6">
-            <div class="bub">
-                <img src="{% static 'assets/images/bubles.png' %}" alt="">
-            </div>
-            <h2>How to get started
-            </h2>
-            <p>Get in touch with us at <span><a  href="#"> seo@webify.io</a></span> </p>
-            <div class="stra_request_purposal sec6_btn">
-                <a href="#" class="form_btn">request purposal
-                    <span class="req_icon"><img src="{% static 'assets/images/arrow.png' %}" alt="" /></span></a>
-            </div>
-        </div>
-    </div>
-</section>
 
 {% endblock %}

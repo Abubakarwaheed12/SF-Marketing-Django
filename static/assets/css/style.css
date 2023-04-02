@@ -4,7 +4,7 @@
 }
 .home_hero h2{
         font-weight: 600;
-        font-size: 58px;
+        font-size: 29px;
         color: white;
         max-width: 650px;
         font-family: 'Poppins', sans-serif;
@@ -262,8 +262,9 @@
 }
 .focus1 {
         font-size: 18px;
-        width: 403px;
+        max-width: 560px;
         text-align: center;
+        padding-bottom: 10px;
         margin: 0 auto;
         padding-left: 0px;
         padding-right: 0px;
@@ -425,7 +426,7 @@
         .sec3_text1 p{
                 padding-left: 10px;
                 padding-right: 10px;
-                font-size: 18px;
+                font-size: 14px;
         }
 }
 @media(max-width:600px){
@@ -447,6 +448,13 @@
         }
         .sec1_box1{
                 margin: 20px auto;
-                max-width: 590px;
+                width: 100%;
+        }
+         .sec1_box1_content img{
+                display: flex;
+                margin: 0 auto;
+        }
+        .sec1_box1_content p {
+                text-align: center;
         }
 }

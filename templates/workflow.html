@@ -1,54 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Our  Workflow {% endblock %}
+{% block pagecss %}
+<link rel="stylesheet" href="{% static 'assets/css/workflow.css' %}">
+{% endblock %}
 
-<head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Workflow</title>
-    <link rel="stylesheet" href="assets/css/workflow.css"/>
-    <script src="assets/jquery/jquery-3.6.0.js"></script>
-    <script src="https://kit.fontawesome.com/777a0b0f94.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-    <!-- ---------------HEADER----------- -->
-    <header class="header">
-        <div class="container">
-            <!-- ---------NAVBAR ------------->
-            <div class="navbar">
-                <div class="logo">
-                    <a href="index.html"><img src="assets/images/logo.png" alt="" />
-                    </a>
-                </div>
-                <div class="menu">
-                    <ul>
-                        <li><a href="index.html">home</a></li>
-                        <li><a href="services.html">services</a></li>
-                        <li><a href="workflow.html">workflow</a></li>
-                        <li><a href="case_studies.html">case studies</a></li>
-                        <li><a href="about.html">about</a></li>
-                        <li class="request_purposal">
-                            <a href="#" class="form_btn form_btn2">request purposal
-                                <span class="req_icon"><img src="assets/images/arrow.png" alt="" /></span></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="toggle">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                </div>
-            </div>
-       
-        </div>
-    </header>
+{% block page %}
     <!--HERO SECTION -->
     <section class="hero_section">
      <!-- header text -->
      <div class="workflow_header_text">
         <h2>Workflow</h2>
-        <p>Webify is a Fintech focused SEO Agency.</p>
+        <p>SF Marketing is a  focused Digital Marketing Agency.</p>
     </div>
     </section>
     <!----------------MODAL POPUP FORM ------->
@@ -114,7 +77,18 @@
     <section class="strategic_approach">
         <div class="container">
         <h3>Our Strategic Approach</h3>
-        <p>Mauris ac nisi lectus. Donec ac libero nec dui ullamcorper facilisis. Sed vehicula rhoncus magna, et porttitor arcu semper sit amet. Nam gravida libero eget suscipit fringilla. Quisque vel ante sollicitudin, rhoncus ex quis, feugiat leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc venenatis ac orci a faucibus. Nulla porttitor purus ac nisl mattis, a accumsan mauris aliquam. Integer auctor risus eu tortor porttitor vulputate. Curabitur in ullamcorper lectus. Sed tempus, nisl vitae accumsan euismod, arcu lectus rutrum ante, eget pulvinar sapien lacus a ligula. Duis sagittis enim dapibus dui suscipit, eget feugiat massa finibus. Nulla cursus diam nibh, et accumsan magna iaculis ultricies.</p>
+        <p>As a digital marketer and manager, I believe that a comprehensive and effective strategy is key to driving conversions and achieving your business goals. Here's how I can help you develop a strategic approach to your digital marketing efforts:
+                <br><br>
+            <strong>1-Objective Alignment:</strong> I begins by understanding your business objectives and developing a strategy that aligns with your goals. By doing this, I ensure that all of my efforts are geared towards achieving your desired outcomes.<br>
+            <strong>2- Target Audience Identification:</strong> I then identify your target audience and their pain points, interests, and behaviors. This helps me develop messaging and content that resonates with your audience and drives engagement.<br><br>
+            <strong>3-Content Strategy Development:</strong> I develop a comprehensive content strategy that includes a variety of formats and channels. This could include blog posts, social media content, email marketing campaigns, and more. My focus is on creating high-quality, relevant, and valuable content that speaks to your audience.<br><br>
+            <strong>4-Effective SEO Implementation:</strong> I ensure that your website is optimized for relevant keywords and phrases, and that your content is structured in a way that makes it easy for search engines to crawl and index.<br><br>
+            <strong>5-Paid Advertising Leverage:</strong> I leverage paid advertising on platforms like Google Ads, Facebook Ads, or LinkedIn Ads to reach your target audience and drive traffic to your website.
+            6-Reports: Using tools like Google Analytics and other data visualization software, I create customized reports that highlight the key performance indicators (KPIs) that matter most to my clients. These reports are designed to be easy to understand and provide actionable insights that can be used to optimize campaigns and refine the overall digital marketing strategy.
+            7-Results Tracking and Analysis: I track and measure your results using tools like Google Analytics to understand what's working and what's not. This helps me optimize your campaigns and improve your results over time. I provide regular reporting on your key performance indicators (KPIs), such as website traffic, click-through rates, conversion rates, and more.
+            8-Strategy Refinement: Based on the insights gained from reporting and analysis, I refine the strategy as needed to ensure that we continue to meet your objectives and drive results.
+            <br><br>
+            By working with me, you'll get a digital marketer and manager who understands the importance of comprehensive reporting and analysis. I will work with you to develop a strategic approach that drives conversions, achieves your business goals, and provides you with regular reporting and analysis to track progress and make data-driven decisions.</p>
         <div class="stra_request_purposal" >
             <a href="#" class="form_btn">request purposal
                 <span class="req_icon"><img src="assets/images/arrow.png" alt="" /></span></a>
@@ -146,8 +120,8 @@
                         <p>01</p>
                     </div>  
                     <div class="w_f_t">
-                        <h4>Normalize Search Data</h4>
-                        <p>Search data aggregation from multiple sources into a workable dashboard</p>
+                        <h4>Research and Analysis</h4>
+                        <p>Conduct research and analysis to identify target audience, industry trends, and competitors.</p>
                     </div>
                 </div>
                 </div>
@@ -157,9 +131,8 @@
                             <p>02</p>
                         </div>  
                         <div class="w_f_t">
-                            <h4>Diagnostics and Audit</h4>
-                            <p>We take a tactical, in the trenches approach to 
-                                execution with scalable & predictable growth</p>
+                            <h4>Strategy Development</h4>
+                            <p>Develop a comprehensive digital marketing strategy that aligns with business goals and target audience.</p>
                         </div>
                     </div>  
                 </div>
@@ -169,21 +142,21 @@
                             <p>03</p>
                         </div>  
                         <div class="w_f_t">
-                            <h4>Content 3.0</h4>
-                            <p>Building a content  strategy; Highly focused  
-                                on value to users and Semantic SEO principles </p>
+                            <h4>Content Creation</h4>
+                            <p>Create engaging and relevant content for various digital channels such as website, social media, and email marketing.</p>
                         </div>
                     </div>  
                 </div>
+
+                
                 <div class="step4">  
                     <div class="w_f_flex">
                         <div class="w_f_num">
                             <p>04</p>
                         </div>  
                         <div class="w_f_t">
-                            <h4>Pareto Principle</h4>
-                            <p>We focus on the 20% of opportunities that 
-                                matter the most; & make the biggest impact </p>
+                            <h4>Campaign Execution</h4>
+                            <p>Implement digital marketing campaigns using various tactics such as SEO, PPC, social media advertising, and email marketing.</p>
                         </div>
                     </div>   
                 </div>
@@ -193,9 +166,8 @@
                             <p>05</p>
                         </div>  
                         <div class="w_f_t">
-                            <h4>Tactical Strategy</h4>
-                            <p>We take a tactical, in the trenches approach to 
-                                execution with scalable & predictable growth</p>
+                            <h4>Performance Monitoring</h4>
+                            <p>Track and analyze the performance of digital marketing campaigns using metrics such as website traffic, conversion rates, and engagement rates</p>
                         </div>
                     </div>   
                 </div>
@@ -204,159 +176,6 @@
     </div>
 </section>
 
-    
-    <!--------------------SECTION 5 -------------------->
-    <section class="section_5">
-    <div class="container">
-        <div class="sec5">
-            <h2>Customer Experiences</h2>
-            <div class="focus">
-                <div class="focus1">
-                    <div class="test_photo">
-                        <img src="assets/images/sec5_img1.png" alt="">
-                    </div>
-                    <center>
-                        <div class="sec3_icon">
-                            <p>“</p>
-                        </div>
-                    </center>
-                    <div class="sec3_text def">
-                        <p>Working with Igal is a treat! When it comes to understanding SEO inside out and how to apply
-                            it in organizations of different sizes and industries, he really is the best of the best.
-                        </p>
-                    </div>
-                    <div class="sec3_name">
-                        <p> <b style="color:#ffff;"> Anat Sneh ,</b> Director of Digital
-                            Marketing <br>
-                            Intelligence Solution, SimilarWeb</p>
-                        <div class="test_img">
-                            <img src="assets/images/sec5_img3.png" alt="">
-                        </div>
+{% include 'customerexperience.html' %}
 
-                    </div>
-
-                </div>
-                <div class="focus1">
-                    <div class="test_photo">
-                        <img src="assets/images/sec5_img2.png" alt="">
-                    </div>
-                    <center>
-                        <div class="sec3_icon">
-                            <p>“</p>
-                        </div>
-                    </center>
-                    <div class="sec3_text def">
-                        <p>I've been working with Igal for over 8 years, and will recommend his new agency to anyone
-                            who's looking for a genuine organic growth strategy. Igal is not just an SEO expert, he
-                            truly gets International Search, a rare mix of Technical and Marketing-oriented SEO.</p>
-                    </div>
-                    <div class="sec3_name">
-                        <p> <b style="color:#ffff;">Neta Geffen ,</b> Director of Organic
-                            Growth, Miro </p>
-                        <div class="test_img">
-                            <img src="assets/images/sec5_img4.png" alt="">
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-    <!--------------------SECTION 6 -------------------->
-    <section class="section_6">
-      <div class="container">
-        <div class="sec6">
-            <div class="bub">
-                <img src="assets/images/bubles.png" alt="">
-            </div>
-            <h2>How to get started
-            </h2>
-            <p>Get in touch with us at <span><a  href="#"> seo@webify.io</a></span> </p>
-            <div class="stra_request_purposal sec6_btn">
-                <a href="#" class="form_btn">request purposal
-                    <span class="req_icon1"><img src="assets/images/arrow.png" alt="" /></span></a>
-            </div>
-        </div>
-    </div>
-</section>
-    <!--------------------FOOTER-------------------->
-    <footer>
-    <div class="footer">
-        <div class="container">
-            <div class="ftr_content">
-                <div class="ftr_logo">
-                   <a href="index.html"><img src="assets/images/footer_logo.png" alt=""></a> 
-                    <p>Terms & Conditions . Privacy Policy</p>
-                </div>
-                <div class="navi">
-                    <h2>Navigation</h2>
-                    <div class="btm_line_ftr"></div>
-                    <div class="ftr_menu">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="workflow.html">Workflow</a></li>
-                            <li><a href="case_studies.html">Case Studies</a></li>
-                            <li><a href="about.html">About</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="ftr_services">
-                    <h2>Services</h2>
-                    <div class="btm_line_ftr"></div>
-                    <div class="ftr_menu">
-                        <ul>
-                            <li><a href="#">Growth Strategy</a></li>
-                            <li><a href="#">Analytics & Diagnostics</a></li>
-                            <li><a href="#">Enterprise Technical Auditing</a></li>
-                            <li><a href="#">Product-Led Content (3.0)</a></li>
-                            <li><a href="#">Link Strategy</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="social">
-                    <h2>Social</h2>
-                    <div class="btm_line_ftr"></div>
-                    <div class="ftr_icons">
-                        <ul>
-                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>© 2022 <a href="index.html" style="color:white; text-decoration: none; font-size:17px ;"> Webify.</a> All
-                    Rights Reserved.</p>
-            </div>
-        </div>
-    </div>
-</footer>
-
-
-<!-- js for menu  -->
-    <script>
-    $(document).ready(function(){
-        $(".toggle").click(function(){
-            // $(".menu.active").toggleClass("active");
-            $(".menu").toggleClass("active");
-            $(".toggle").toggleClass("active");
-        })
-
-        // js for for popup form
-        $(".form_btn").click(function(){
-            $('#form_content').show();
-        })
-        //close button
-        $('.close_btn').click(function(){
-            $('#form_content').hide();
-        })
-
-      });
-   </script>
-</body>
-</html>
+{% endblock %}

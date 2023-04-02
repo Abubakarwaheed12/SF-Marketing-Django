@@ -27,11 +27,12 @@ body {
 }
 .service_flex_1{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap:20px;
     flex-wrap: wrap;
 }
 .gr_ser{
-    height:601px;
+    /* height:601px; */
     width:365px;
     border: 1px solid rgb(84, 110, 255);
     border-radius: 20px;

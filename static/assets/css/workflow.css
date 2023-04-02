@@ -434,18 +434,18 @@ input[type=button]{
 }
 .w_f_t{
         max-width: 285px;
-        margin: 19px auto;
+        margin: 14px auto;
 }
 .w_f_t h4{
         font-family: 'Poppins', sans-serif;
         color: #ffffff;
-        font-size:22.14px;
+        font-size:18.14px;
         font-weight: 600;
 }
 .w_f_t p{
         font-family: 'Poppins', sans-serif;
         color: #b3bfcc;
-        font-size:11.54px;
+        font-size:10px;
         font-weight:400;
 }   
 .section_6{
@@ -477,8 +477,8 @@ input[type=button]{
         padding-top: 101px;
 }
 .focus1 {
-        width: 548px;
-        height: 344px;
+        max-width: 548px;
+        /* height: 344px; */
         border: 1px solid #2b449c;
         border-radius: 10px;
 }

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}  {% endblock %} </title>
     <link rel="stylesheet" href="{% static 'assets/css/workflow.css' %}">
-    {% block pagecsss %}
+    {% block pagecss %}
     <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
     {% endblock %}
     <link rel="stylesheet" href="{% static 'assets/jq plugin/slick1/slick/slick.css' %}">    
@@ -23,16 +23,17 @@
             <!-- ---------NAVBAR ------------->
             <div class="navbar">
                 <div class="logo">
-                    <a href="index.html"><img src="{% static 'assets/images/sf.png' %}" alt="" />
+                    <a href="{% url 'home' %}"><img src="{% static 'assets/images/sf.png' %}" alt="" style="width: 170px;
+                        height: 81px;" />
                     </a>
                 </div>
                 <div class="menu">
                     <ul>
-                        <li><a href="index.html">home</a></li>
-                        <li><a href="services.html">services</a></li>
-                        <li><a href="workflow.html">workflow</a></li>
-                        <li><a href="case_studies.html">case studies</a></li>
-                        <li><a href="about.html">about</a></li>
+                        <li><a href="{% url 'home' %}">home</a></li>
+                        <li><a href="{% url 'services' %}">services</a></li>
+                        <li><a href="{% url 'workflow' %}">workflow</a></li>
+                        <li><a href="{% url 'casestudies' %}">case studies</a></li>
+                        <li><a href="{% url 'about' %}">about</a></li>
                         <li class="request_purposal">
                             <a href="#" class="form_btn form_btn2">request purposal
                                 <span class="req_icon"><img src="{% static 'assets/images/arrow.png' %}" alt="" /></span></a>
@@ -117,7 +118,9 @@
             <div class="container">
                 <div class="ftr_content">
                     <div class="ftr_logo">
-                       <a href="index.html"><img src="{% static 'assets/images/sf.png' %}" alt=""></a> 
+                       <a href="{% url 'home' %}"><img src="{% static 'assets/images/sf.png' %}" alt="" style="width: 170px;
+                        height: 81px;"
+                    ></a> 
                         <p>Terms & Conditions . Privacy Policy</p>
                     </div>
                     <div class="navi">
@@ -125,11 +128,11 @@
                         <div class="btm_line_ftr"></div>
                         <div class="ftr_menu">
                             <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="services.html">Services</a></li>
-                                <li><a href="workflow.html">Workflow</a></li>
-                                <li><a href="case_studies.html">Case Studies</a></li>
-                                <li><a href="about.html">About</a></li>
+                                <li><a href="{% url 'home' %}">Home</a></li>
+                                <li><a href="{% url 'services' %}">Services</a></li>
+                                <li><a href="{% url 'workflow' %}">Workflow</a></li>
+                                <li><a href="{% url 'casestudies' %}">Case Studies</a></li>
+                                <li><a href="{% url 'about' %}">About</a></li>
                             </ul>
                         </div>
                     </div>
@@ -138,11 +141,11 @@
                         <div class="btm_line_ftr"></div>
                         <div class="ftr_menu">
                             <ul>
-                                <li><a href="#">Growth Strategy</a></li>
-                                <li><a href="#">Analytics & Diagnostics</a></li>
-                                <li><a href="#">Enterprise Technical Auditing</a></li>
-                                <li><a href="#">Product-Led Content (3.0)</a></li>
-                                <li><a href="#">Link Strategy</a></li>
+                                <li><a href="#">Email Marketing</a></li>
+                                <li><a href="#">Social media manager</a></li>
+                                <li><a href="#">Web Development</a></li>
+                                <li><a href="#">Branding & Design</a></li>
+                                <li><a href="#">Pay Per Click Advertising</a></li>
                             </ul>
                         </div>
                     </div>
@@ -151,17 +154,17 @@
                         <div class="btm_line_ftr"></div>
                         <div class="ftr_icons">
                             <ul>
-                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="https://web.facebook.com/saniaafarooq"><i class="fa-brands fa-facebook-f"></i></a></li>
                                 <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
                                 <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/sania-farooq"><i class="fa-brands fa-linkedin-in"></i></a></li>
     
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="copyright">
-                    <p>© 2022 <a href="index.html" style="color:white; text-decoration: none; font-size:17px ;"> Webify.</a> All
+                    <p>© 2023 <a href="index.html" style="color:white; text-decoration: none; font-size:17px ;"> Sania Farooq.</a> All
                         Rights Reserved.</p>
                 </div>
             </div>
