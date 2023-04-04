@@ -72,7 +72,8 @@ class Workflow(View):
         
         return render(request, self.template_name)
     
-    
+
+# Contact Form Save View 
 class Contact(View):
     
     def get(self, request , *args , **kwargs):
