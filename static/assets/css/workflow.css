@@ -45,7 +45,7 @@ border-radius: 10px;
         justify-content: space-between;
 }
 .logo {
-        padding-top: 15px;
+        padding-top: 9px;
 }
 
 /*-------------  */
@@ -116,22 +116,8 @@ display:block;
         text-align: center;
         font-family: 'Poppins', sans-serif;
 }
-.toggle{
-        width: 40px;
-        height: 40px;
-        margin-top: 30px;
-        display: none;
-        cursor: pointer;
-}
-.bar1{
-        margin-top: 10px;
-}
-.bar1, .bar2, .bar3{
-        width: 100%;
-        height: 3px;
-        background-color: #ffffff;
-        margin-bottom: 10px;
-}
+
+
 /* ----------------MODAL POPUP FORM ------- */
 .modal_popup{
         max-width: 100%;
@@ -448,6 +434,11 @@ input[type=button]{
         font-size:10px;
         font-weight:400;
 }   
+@media(max-width:670px){
+        .w_f_t p{
+                font-size:9px;
+        }        
+}
 .section_6{
         padding-bottom: 172px;
 }  
@@ -516,38 +507,15 @@ input[type=button]{
         font-family: 'Poppins', sans-serif;
         font-weight: 400;
         text-align: center;
-        position: relative;
-        top: -70px;
         max-width: 479px;
         margin: 0 auto;
+        padding: 20px;
         line-height: 1.556;
 }
-.sec3_name p {
-        text-align: center;
-        font-size: 18px;
-        color: #bec7d3;
-        font-weight: 400;
-        font-family: 'Poppins', sans-serif;
-        position: relative;
-        top: -80px;
-        padding-top: 48px;
-}
 
-.sec3_name p::after{
-        content: "";
-        height: 1px;
-        width: 17px;
-        background: #546eff;
-        display: block;
-        margin: 0 auto;
-        margin-top: 13px;
-}
-.test_img {
-        display: flex;
-        justify-content: center;
-        position: relative;
-        top: -64px;
-}
+
+
+
 /* --------------------SECTION 6 -------------------- */
 .sec6 {
         width: 100%;
@@ -714,7 +682,7 @@ input[type=button]{
                 margin: 0 auto;
         }
         .focus1:last-child{
-                margin-top: 140px;
+                margin-top: 20px;
             }
 }
 @media (max-width:1092px) {
@@ -724,10 +692,54 @@ input[type=button]{
                 }
                 .form_btn2{
                         display: none;
-                }      .toggle{
-                display: block;
+                }    
+        .mobil-menu-hamburger {
+                width: 32px;
+                height: 32px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                right: 0px;
+                top: 27px;
+                z-index: 9999;
         }
-
+        .mobil-menu-hamburger div{
+                position: relative;
+                width: 21px;
+                height: 16px;
+        }
+        .mobil-menu-hamburger span{
+                position: absolute;
+                left: 0;
+                display: block;
+                background: #F2F2F2;
+                width: 100%;
+                height: 3px;
+                border-radius: 2px;
+                transition: all .3s ease-in-out;
+        }
+        .mobil-menu-hamburger span:nth-child(1) {
+                top: 0%;
+            }
+        .mobil-menu-hamburger span:nth-child(2) {
+            top: calc(50% - 1px);
+            opacity: 1;
+        }
+        .mobil-menu-hamburger span:nth-child(3) {
+                top: calc(100% - 2px);
+            }
+        .mobil-menu-hamburger.active span:nth-child(1) {
+            top: 50%;
+            transform: rotate(45deg);
+        }
+        .mobil-menu-hamburger.active span:nth-child(2) {
+                opacity: 0;
+            }
+        .mobil-menu-hamburger.active span:nth-child(3) {
+            top: 50%;
+            transform: rotate(-45deg);
+        }
         .menu{
          /* display: block; */
          position: absolute;
@@ -743,15 +755,7 @@ input[type=button]{
                 left: 0px;
                 transition: 0.6s all;
         }
-        .active .bar2{
-                opacity: 0;
-        }
-        .active .bar1{
-                transform: translateY(13px) rotate(46deg);
-        }
-        .active .bar3{
-                transform: translateY(-11px) rotate(-45deg);
-        }
+        
         .menu ul li {
                 display: block;
                 padding-bottom: 30px;
@@ -850,17 +854,12 @@ input[type=button]{
             }
         .logo img{
                 max-width: 133px;
-                padding-top: 20px;
         }
         .sec3_text p{
-                padding: 0px 8px;
+                padding: 10px 8px;
         }
-        .sec3_name p{
-                top: -94px;
-        }
-        .test_img {
-                top: -79px;
-        }
+       
+     
         /* work flow */
         .workflow_header_text h2 {
                 font-size: 32px;

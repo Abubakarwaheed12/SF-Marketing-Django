@@ -86,9 +86,17 @@ body {
     display: flex;
     justify-content: space-between;
 }
+.sec3_name p {
+    text-align: center;
+    font-size: 18px;
+    color: #bec7d3;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
 .about_img{
     max-width:488px;
-    max-height:504px;
     position: relative;
 }
 .about_img img{
@@ -248,7 +256,5 @@ body {
         margin: 0 auto;
         margin-bottom: 20px;
 }
-    .sec1_box1_content p {
-        font-size: 19px;
-}
+
 }

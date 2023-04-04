@@ -168,7 +168,6 @@ ul{
         margin-bottom: 22px;
         margin: 10px auto;
         max-width: 300px;
-        height: 666px;
     }
 }
 @media(max-width:787px){
@@ -187,7 +186,5 @@ ul{
     .analytic_btn {
         margin-top: 63px;
     }
-    .gr_ser{
-        height: 645px;
-    }
+ 
 }
