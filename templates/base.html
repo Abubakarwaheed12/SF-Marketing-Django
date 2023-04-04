@@ -23,8 +23,7 @@
             <!-- ---------NAVBAR ------------->
             <div class="navbar">
                 <div class="logo">
-                    <a href="{% url 'home' %}"><img src="{% static 'assets/images/sf.png' %}" alt="" style="width: 170px;
-                        height: 81px;" />
+                    <a href="{% url 'home' %}"><img src="{% static 'assets/images/logo.png' %}" alt="" style="height: 81px;" />
                     </a>
                 </div>
                 <div class="menu">
@@ -61,48 +60,36 @@
       <p>Please fill out the short form below with your project details 
           and we will be in touch shortly.</p>
     </div>  
-    <div class="form">
-      <div class="form_flex1">
+    <div class="form" >
+<form action="" >
+    {% csrf_token %}
+        <div class="form_flex1">
           <div class="name">
               <span class="name_icon">
-          <input type="text" name="" placeholder="Name">
+          <input type="text" name="" placeholder="Name" required id="name">
       </span>
       </div>
       <div class="email">
           <span class="email_icon">
-          <input type="email" name="" placeholder="Email">
+          <input type="email" name="" placeholder="Email" required id="email">
       </span>
       </div>
           
       </div>
-      <div class="form_flex1">
-          <div class="url">
-         <span class="url_icon">
-              <input type="url" name="" placeholder="Your Website URL">
-          </span>
-          </div>
-          <div class="budget">
-              <span class="bug_icon">
-          <select name="" id="">
-              <option value="">Your Budget</option>
-              <option value="">3500-2500</option>
-              <option value="">3500-5000</option>
-              <option value="">3500-5000</option>
-          </select>
-      </span>
-      </div>
-      </div>
+     
+
       <div class="message">
           <span class="mes">
-          <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+          <textarea  cols="30" rows="10" value=""  placeholder="Message" required  id="message" ></textarea>
       </span>
       </div>
       <div class="send_btn">
           <span class="btn_icon">
-          <input type="button" value="Send Me A Proposal">
+          <input type="button" value="Send Me A Proposal" id="form_submit">
               <img src="{% static 'assets/images/arrow.png' %}" alt="">
           </span>
       </div>
+    </form>
     </div>
   </div>
     </div>
@@ -118,7 +105,7 @@
             <div class="container">
                 <div class="ftr_content">
                     <div class="ftr_logo">
-                       <a href="{% url 'home' %}"><img src="{% static 'assets/images/sf.png' %}" alt="" style="width: 170px;
+                       <a href="{% url 'home' %}"><img src="{% static 'assets/images/logo.png' %}" alt="" style="
                         height: 81px;"
                     ></a> 
                         <p>Terms & Conditions . Privacy Policy</p>
@@ -199,6 +186,41 @@
         // slider
         
       });
+
+
+      //Form Ajax
+      $('#form_submit').click(function(){
+        var name=$('#name').val()
+        var email=$('#email').val()
+        var message=$('#message').val()
+        var token =  $('input[name="csrfmiddlewaretoken"]').attr('value'); 
+        console.log('dad' , name)
+        data={
+            'name':name,
+            'email':email,
+            'message':message,
+            'token':token
+        }
+
+        console.log(data)
+        $.ajax({
+            type:'post',
+            url:'{% url "contact" %}',
+            dataType:"json",
+            data:data,
+    
+            success:function(response){
+                console.log(response)
+            },
+    
+            error:function(error){
+                console.log(error)
+            }
+    
+          }) 
+      })
+
+      
    </script>
 
 

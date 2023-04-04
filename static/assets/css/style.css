@@ -386,11 +386,7 @@
         }
        .hero_section{
         width: 100%;
-        background: linear-gradient(rgba(6,21,39,0.502),rgba(6,21,39,0.502)), url(../images/Workflow.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
-        clip-path: polygon(100% 0, 100% 92%, 53% 100%, 0 93%, 0 0);
+ 
         position: relative;
         bottom: 101px;
         z-index: 9;
