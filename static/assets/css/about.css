@@ -48,7 +48,9 @@ body {
     display: flex;
     justify-content: space-between;
     padding-top: 50px;
+    gap: 10px;
 }
+
 .sec1_box1 {
     width: 216px;
     height: 250px;
@@ -222,6 +224,21 @@ body {
     }
 }
 @media(max-width:767px){
+    .sec1_box1 ,.sec1_boxes{
+        width: 100%;
+    }
+    .sec1_box1_content p{
+        max-width: 100%;
+        text-align: center;
+    }
+    .sec1_box1_content img{
+        display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
+    }
+
+
     .about_flex{
         display: flex;
         flex-direction: column;

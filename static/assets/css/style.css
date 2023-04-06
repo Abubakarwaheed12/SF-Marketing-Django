@@ -59,9 +59,10 @@
 }
 .sec1_boxes {
         display: flex;
-        justify-content: space-between;
+        justify-content:center;
         padding-top: 50px;
         flex-wrap: wrap;
+        gap: 10px;
 }
 .sec1_box1 {
         width: 216px;
@@ -95,6 +96,7 @@
         justify-content: space-between;
         padding-top: 115px;
         padding-bottom: 120px;
+        gap: 20px;
 }
 .sec2_right {
         max-width: 576px;
@@ -265,7 +267,7 @@
         text-align: center;
         padding-bottom: 10px;
         margin: 0 auto;
-        padding: 20px;
+        padding: 0px 20px 20px 20px;
 }
 /* --------------------SECTION 4 -------------------- */
 .sec4 {
@@ -373,7 +375,7 @@
         }
         .sec2_left img{
                 width: 100%;
-                max-width: 570px;
+                max-width: 100%;
                 height: auto;
         }
         .sec2_flex{
@@ -381,9 +383,14 @@
                 flex-direction: column;
                 justify-content: center;
         }
-       
+        .sec2_right{
+                max-width: 100%;
+        }
         .sec2_right h2{
                 padding-top: 60px;
+        }
+        .sec2_right p{
+                max-width: 100%;
         }
        .hero_section{
         width: 100%;
@@ -393,6 +400,12 @@
         z-index: 9;
         padding-top: 101px;
         padding-bottom: 90px;
+       }
+       .focus1{
+        max-width: 100%;
+       }
+       .sec3_text p{
+        max-width: 100%;
        }
 }
 @media(max-width:767px){
@@ -430,16 +443,14 @@
         .sec2_right h2{
                 font-size: 20px;
         }
-        .para{
-                max-width: 320px;
-        }
+       
       
-        .get_touch a{
-                font-size: 10px;
-                padding: 16px 5px;
-        }
-        .sec2_right{
-                max-width: 576px;
+        .get_touch a {
+                font-size: 14px;
+                padding: 15px 16px;
+            }
+        .get_icon{
+                display: none;
         }
         .sec1_box1{
                 margin: 20px auto;
