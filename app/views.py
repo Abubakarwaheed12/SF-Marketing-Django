@@ -9,7 +9,7 @@ from app.models import Testimonials ,Services , Contact
 
 class HomeView(View):
 
-    template_name='index.html'
+    template_name='templates/index.html'
     
     def get(self , request ,  *args,**kwargs):
                 
@@ -24,7 +24,7 @@ class HomeView(View):
 
 class Services(View):
     
-    template_name='services.html'
+    template_name='templates/services.html'
     
     def get(self , request , *args,**kwargs):
         
@@ -38,7 +38,7 @@ class Services(View):
 
 class About(View):
     
-    template_name='about.html'
+    template_name='templates/about.html'
     
     def get(self , request , *args,**kwargs):
         
@@ -51,7 +51,7 @@ class About(View):
 
 class CaseStudies(View):
     
-    template_name='case_studies.html'
+    template_name='templates/case_studies.html'
     
     def get(self , request , *args,**kwargs):
         
@@ -64,7 +64,7 @@ class CaseStudies(View):
 
 class Workflow(View):
     
-    template_name='workflow.html'
+    template_name='templates/workflow.html'
     
     def get(self , request , *args,**kwargs):
         
@@ -78,8 +78,8 @@ class Contact(View):
     
     def get(self, request , *args , **kwargs):
         
-        return render(request, 'index.html')
+        return render(request, 'templates/index.html')
     
     
     def post(self, request , *args , **kwargs):
-        return render(request, 'index.html')
+        return render(request, 'templates/index.html')
