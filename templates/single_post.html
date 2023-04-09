@@ -1,0 +1,22 @@
+{% extends 'templates/base.html' %}
+{% load static %}
+{% block title %} Single Post  {% endblock %}
+{% block pagecss %}
+<link rel="stylesheet" href="{% static 'assets/css/workflow.css' %}">
+<link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+<link rel="stylesheet" href="{% static 'assets/css/blog.css' %}">
+{% endblock %}
+
+{% block page %}
+
+<!-- ----------------Blog------------- -->
+<div class="container_blog">
+
+
+</div>
+<!--  -->
+
+
+{% include 'templates/customerexperience.html' %}
+
+{% endblock %}

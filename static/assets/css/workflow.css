@@ -9,6 +9,7 @@
 }
 body {
         overflow-x: hidden;
+        background-color: #011a39;
 }
 .container {
         max-width: 1140px;
@@ -951,3 +952,6 @@ input[type=submit]{
 
       
 }
+
+
+/*  --------- Blog --------------- Css */

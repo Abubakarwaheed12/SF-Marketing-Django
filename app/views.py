@@ -109,3 +109,17 @@ class Blog(View):
         
         return render(request, self.template_name)
   
+  
+# Single Post 
+class SingleBlog(View):
+    
+    template_name='templates/single_post.html'
+    
+    def get(self , request , id,  *args,**kwargs):
+        
+        print(id)
+        
+        context={}
+        
+        return render(request, self.template_name)
+  

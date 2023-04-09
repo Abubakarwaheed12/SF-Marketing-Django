@@ -1,14 +1,49 @@
 {% extends 'templates/base.html' %}
 {% load static %}
-{% block title %} Our  Workflow {% endblock %}
+{% block title %} Blog {% endblock %}
 {% block pagecss %}
 <link rel="stylesheet" href="{% static 'assets/css/workflow.css' %}">
 <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+<link rel="stylesheet" href="{% static 'assets/css/blog.css' %}">
 {% endblock %}
 
 {% block page %}
 
 <!-- ----------------Blog------------- -->
+<div class="container">
+<div class="blog">
+   
+    <div class="blog_post">
+        <a href="{% url 'post' 1 %}">
+        <div class="blog_img">
+            <img src="{% static 'assets/images/sania.jpeg' %}" alt="">
+        </div>
+        <div class="blog_title">
+            <p>How to Become A good Developer</p>
+        </div>
+        <div class="blog_date">
+            <p>November 23, 2022</p>
+        </div>
+    </a>
+    </div>
+
+    <div class="blog_post">
+        <a href="#">
+        <div class="blog_img">
+            <img src="{% static 'assets/images/sec6_left_bef.png' %}" alt="">
+        </div>
+        <div class="blog_title">
+            <p>How to Become A good Developer</p>
+        </div>
+        <div class="blog_date">
+            <p>November 23, 2022</p>
+        </div>
+    </a>
+    </div>
+
+</div>
+</div>
+<!--  -->
 
 
 {% include 'templates/customerexperience.html' %}
