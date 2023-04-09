@@ -1,0 +1,16 @@
+{% extends 'templates/base.html' %}
+{% load static %}
+{% block title %} Our  Workflow {% endblock %}
+{% block pagecss %}
+<link rel="stylesheet" href="{% static 'assets/css/workflow.css' %}">
+<link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+{% endblock %}
+
+{% block page %}
+
+<!-- ----------------Blog------------- -->
+
+
+{% include 'templates/customerexperience.html' %}
+
+{% endblock %}

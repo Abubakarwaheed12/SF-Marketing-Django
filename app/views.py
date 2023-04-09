@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.views import View
 from django.views.generic.base import TemplateView
 from django.views.generic import ListView
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from app.models import Testimonials ,Services , Contact
 # Create your views here.
 
@@ -74,12 +75,37 @@ class Workflow(View):
     
 
 # Contact Form Save View 
-class Contact(View):
-    
-    def get(self, request , *args , **kwargs):
+class Contact(TemplateView  , ListView):
+    model='Contact'
+    def get(self, request):
         
         return render(request, 'templates/index.html')
     
     
     def post(self, request , *args , **kwargs):
+        
+        name=request.POST.get('name')
+        email=request.POST.get('email')
+        message=request.POST.get('message')
+        
+        print(name , email , message)
+        # if name and email:
+        #     Contact.objects.create(name=name , email=email , message=message)
+            
+            
+
         return render(request, 'templates/index.html')
+    
+    
+
+# Blog 
+class Blog(View):
+    
+    template_name='templates/blog.html'
+    
+    def get(self , request , *args,**kwargs):
+        
+        context={}
+        
+        return render(request, self.template_name)
+  

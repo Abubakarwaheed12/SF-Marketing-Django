@@ -27,8 +27,8 @@ body {
 }
 .service_flex_1{
     display: flex;
-    justify-content: center;
-    gap:20px;
+    justify-content: space-between;
+    gap:5px;
     flex-wrap: wrap;
 }
 .gr_ser{
