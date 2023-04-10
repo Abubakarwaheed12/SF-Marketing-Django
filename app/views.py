@@ -123,3 +123,17 @@ class SingleBlog(View):
         
         return render(request, self.template_name)
   
+  
+  
+    
+# Privacy Policy Page 
+class Privacy(View):
+    
+    template_name='templates/privacy.html'
+    
+    def get(self , request ,  *args,**kwargs):
+        
+        
+        context={}
+        
+        return render(request, self.template_name)

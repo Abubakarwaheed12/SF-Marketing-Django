@@ -113,7 +113,7 @@
                        <a href="{% url 'home' %}"><img src="{% static 'assets/images/logo.png' %}" alt="" style="
                         height: 81px;"
                     ></a> 
-                        <p>Terms & Conditions . Privacy Policy</p>
+                    <p class="term_btn"><a href="{% url 'privacy' %}" style="text-decoration: none;"> Terms & Conditions .</a>  <a href="{% url 'privacy' %}" style="text-decoration: none;"> Privacy Policy </a></p>
                     </div>
                     <div class="navi">
                         <h2>Navigation</h2>
@@ -123,7 +123,7 @@
                                 <li><a href="{% url 'home' %}">Home</a></li>
                                 <li><a href="{% url 'services' %}">Services</a></li>
                                 <li><a href="{% url 'workflow' %}">Workflow</a></li>
-                                <li><a href="{% url 'Blog' %}"></a></li>
+                                <li><a href="{% url 'Blog' %}">Blog</a></li>
                                 <li><a href="{% url 'about' %}">About</a></li>
                             </ul>
                         </div>

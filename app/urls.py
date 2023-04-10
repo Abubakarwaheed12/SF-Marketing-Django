@@ -1,5 +1,5 @@
 from django.urls import path , include
-from app.views import HomeView , Services , Workflow , CaseStudies , About , Contact , Blog , SingleBlog
+from app.views import HomeView , Services , Workflow , CaseStudies , About , Contact , Blog ,SingleBlog ,Privacy 
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -11,5 +11,6 @@ urlpatterns=[
     path('About' , About.as_view() , name='about'),
     path('contact', Contact.as_view() , name='contact'),
     path('post<int:id>', SingleBlog.as_view() , name='post'),
+    path('privacy-Policy' , Privacy.as_view(), name='privacy'),
     
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
