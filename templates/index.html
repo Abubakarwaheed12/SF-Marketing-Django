@@ -6,9 +6,13 @@
 
 
     {% block page %}
+    
     <!--Home HERO SECTION -->
     <section class="hero_section">
-     <!-- header text -->
+        <!-- {% for message in messages %}
+        {{message}}
+        {% endfor %} -->
+        <!-- header text -->
      <div class="home_hero container">
         <h2>Cultivate Your Brand's Story and Ignite Your Digital Presence: Unleashing the Power of Strategic <span style="color:#ff961c;">Branding and Marketing</span> 
         </h2>
@@ -117,7 +121,7 @@
             <div class="test_slider">
                 <div class="testimonials">
                     <div class="test_photo">
-                        <img src="{% static 'assets/images/sec3_img1.png' %}" alt="">
+                        <img src="{% static 'assets/images/client3.jpeg' %}" alt="">
                     </div>
                     <center>
                         <div class="sec3_icon">
@@ -137,7 +141,7 @@
                 </div>
                 <div class="testimonials">
                     <div class="test_photo">
-                        <img src="{% static 'assets/images/sec3_img1.png' %}" alt="">
+                        <img src="{% static 'assets/images/client2.jpeg' %}" alt="">
                     </div>
                     <center>
                         <div class="sec3_icon">
@@ -179,51 +183,17 @@
                 </div>
             </div>
             <div class="areas">
+                {% for service in services %}
                 <div class="area1">
                     <center><img src="{% static 'assets/images/sec4_img1.png' %}" alt="">
-                        <h3>Growth Strategy</h3>
-                        <p>We lead with data and make decisions based on experience. Our approach to growth focuses on
-                            sustainability first; we’re not interested in delivering a “flash in the pan” to our growth
-                            focused clients. </p>
+                        <h3>{{service.name}}</h3>
+                        <p>{{service.desc}}</p>
                     </center>
 
                 </div>
 
-                <div class="area1">
-                    <center><img src="{% static 'assets/images/sec4_img2.png' %}" alt="">
-                        <h3>Analytics & Diagnostics</h3>
-                        <p>They say the devil is in the details, and so are we. We leverage cutting edge analytics,
-                            attribution, and diagnostics solutions to empower our decision making. </p>
-                    </center>
+                {% endfor %}
 
-                </div>
-                <div class="area1">
-                    <center><img src="{% static 'assets/images/sec4_img3.png' %}" alt="">
-                        <h3>Enterprise Technical Auditing</h3>
-                        <p>We’re not scared of multi-million page websites. We understand the nuances to crawling,
-                            auditing, and analyzing the biggest (and most complex) websites on the internet. Our
-                            technical audits prioritize for impact. </p>
-                    </center>
-
-                </div>
-                <div class="area1">
-                    <center><img src="{% static 'assets/images/sec4_img3.png' %}" alt="">
-                        <h3>Enterprise Technical Auditing</h3>
-                        <p>We’re not scared of multi-million page websites. We understand the nuances to crawling,
-                            auditing, and analyzing the biggest (and most complex) websites on the internet. Our
-                            technical audits prioritize for impact. </p>
-                    </center>
-
-                </div>
-                <div class="area1">
-                    <center><img src="{% static 'assets/images/sec4_img3.png' %}" alt="">
-                        <h3>Enterprise Technical Auditing</h3>
-                        <p>We’re not scared of multi-million page websites. We understand the nuances to crawling,
-                            auditing, and analyzing the biggest (and most complex) websites on the internet. Our
-                            technical audits prioritize for impact. </p>
-                    </center>
-
-                </div>
 
 
             </div>

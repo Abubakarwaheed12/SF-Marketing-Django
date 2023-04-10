@@ -183,6 +183,10 @@
 .test_photo img {
         position: relative;
         top: -71px;
+        width: 101px;
+        height: 101px;
+        border-radius: 50%;
+        border: 2px solid #f8842f;
 }
 .sec3_icon {
         width: 39px;

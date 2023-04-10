@@ -10,10 +10,12 @@ class Testimonials(models.Model):
     company=models.CharField(max_length=200, null=True , blank=True) 
     companyImage=models.ImageField(upload_to='media', null=True , blank=True)
 
-
+    objects = models.Manager()
+    
+    
     def __str__(self):
         return self.name
-
+    
 
 # Contact Form
 class Contact(models.Model):
@@ -22,6 +24,9 @@ class Contact(models.Model):
     message=models.CharField(max_length=2000)
     
     
+    
+    objects = models.Manager()
+
     def __str__(self):
         return self.name
     
@@ -31,7 +36,9 @@ class Contact(models.Model):
 class Services(models.Model):
     name=models.CharField(max_length=200)
     desc=models.CharField(max_length=2000)
-    
+
+    objects = models.Manager()
+
     
     def __str__(self):
         return self.name

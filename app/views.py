@@ -3,7 +3,10 @@ from django.views import View
 from django.views.generic.base import TemplateView
 from django.views.generic import ListView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
-from app.models import Testimonials ,Services , Contact
+from django.contrib import messages
+from app.models import Testimonials as testimonials
+from app.models import Services as  services
+from app.models import Contact as  contacts
 # Create your views here.
 
 # Home View
@@ -12,11 +15,21 @@ class HomeView(View):
 
     template_name='templates/index.html'
     
-    def get(self , request ,  *args,**kwargs):
-                
-        context={}
+    def get(self , request):
+        service=services.objects.all()
+        print(service)
+        context={'services':service}
         
-        return render(request, self.template_name)
+        return render(request, self.template_name, context)
+    
+    
+# def HomeView(request):
+#     template_name='templates/index.html'
+#     service=ser.objects.all()
+#     print(service)
+#     context={}
+    
+#     return render(request, template_name)
     
 
 
@@ -89,8 +102,10 @@ class Contact(TemplateView  , ListView):
         message=request.POST.get('message')
         
         print(name , email , message)
-        # if name and email:
-        #     Contact.objects.create(name=name , email=email , message=message)
+        if name and email:
+            contacts.objects.create(name=name , email=email , message=message)
+            print('message sent successfully ...!!')
+            messages.success(request, 'Form Submitted Successfully...')
             
             
 
