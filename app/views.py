@@ -137,3 +137,16 @@ class Privacy(View):
         context={}
         
         return render(request, self.template_name)
+    
+
+# Terms And Conditions  Page 
+class Term_and_Conditions(View):
+    
+    template_name='templates/terms.html'
+    
+    def get(self , request ,  *args,**kwargs):
+        
+        
+        context={}
+        
+        return render(request, self.template_name)

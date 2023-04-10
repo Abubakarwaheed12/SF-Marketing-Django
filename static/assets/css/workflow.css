@@ -955,3 +955,9 @@ input[type=submit]{
 
 
 /*  --------- Blog --------------- Css */
+.term_btn a{
+        color: white;
+    }
+    .term_btn a:hover{
+        color: #ff961c;
+    }
