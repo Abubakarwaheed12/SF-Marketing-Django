@@ -7,6 +7,7 @@ from django.contrib import messages
 from app.models import Testimonials as testimonials
 from app.models import Services as  services
 from app.models import Contact as  contacts
+from app.models import BlogPost as blogs
 # Create your views here.
 
 # Home View
@@ -121,9 +122,11 @@ class Blog(View):
     
     def get(self , request , *args,**kwargs):
         
-        context={}
+        posts=blogs.objects.all()
         
-        return render(request, self.template_name)
+        context={'posts':posts}
+        
+        return render(request, self.template_name , context)
   
   
 # Single Post 
@@ -133,11 +136,11 @@ class SingleBlog(View):
     
     def get(self , request , id,  *args,**kwargs):
         
-        print(id)
+        post=blogs.objects.get(id=id)
         
-        context={}
-        
-        return render(request, self.template_name)
+        context={'post':post}
+        print(post)
+        return render(request, self.template_name, context)
   
   
   

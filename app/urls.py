@@ -2,6 +2,7 @@ from django.urls import path , include
 from app.views import HomeView , Services , Workflow , CaseStudies , About , Contact , Blog ,SingleBlog ,Privacy ,Term_and_Conditions
 from django.conf import settings
 from django.conf.urls.static import static
+from tinymce.models import HTMLField
 
 urlpatterns=[
     path('' , HomeView.as_view() , name='home'),
@@ -13,5 +14,5 @@ urlpatterns=[
     path('post<int:id>/', SingleBlog.as_view() , name='post'),
     path('privacy-Policy/' , Privacy.as_view(), name='privacy'),
     path('terms-and-conditions/', Term_and_Conditions.as_view(), name='terms'),
-    
+    path(r'^tinymce/', include('tinymce.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
