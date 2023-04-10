@@ -6,11 +6,8 @@ class Testimonials(models.Model):
     name=models.CharField(max_length=100)
     designation=models.CharField(max_length=200 , null=True , blank=True)
     review=models.TextField()
-    image=models.ImageField(upload_to='media' ,  null=True , blank=True)
-    company=models.CharField(max_length=200, null=True , blank=True) 
-    companyImage=models.ImageField(upload_to='media', null=True , blank=True)
+    image=models.ImageField(upload_to='media/testimonial_images' ,  null=True , blank=True)
 
-    objects = models.Manager()
     
     
     def __str__(self):
@@ -25,7 +22,6 @@ class Contact(models.Model):
     
     
     
-    objects = models.Manager()
 
     def __str__(self):
         return self.name
@@ -37,7 +33,6 @@ class Services(models.Model):
     name=models.CharField(max_length=200)
     desc=models.CharField(max_length=2000)
 
-    objects = models.Manager()
 
     
     def __str__(self):

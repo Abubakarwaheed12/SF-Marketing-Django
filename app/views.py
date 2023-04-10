@@ -17,8 +17,9 @@ class HomeView(View):
     
     def get(self , request):
         service=services.objects.all()
-        print(service)
-        context={'services':service}
+        reviews=testimonials.objects.all()
+        print(reviews)
+        context={'services':service , 'reviews' : reviews}
         
         return render(request, self.template_name, context)
     

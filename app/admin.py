@@ -4,7 +4,7 @@ from app.models import Services, Contact , Testimonials
 
 @admin.register(Testimonials)
 class TestimonialsAdmin(admin.ModelAdmin):
-    list_display=['id' ,'name','designation','review' , 'company','companyImage','image']
+    list_display=['id' ,'name','designation','review' , 'image']
 
 
 @admin.register(Contact)
