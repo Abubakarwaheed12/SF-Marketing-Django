@@ -120,7 +120,9 @@ display:block;
         font-family: 'Poppins', sans-serif;
 }
 
-
+.mobile-menu{
+        display: none;
+}
 /* ----------------MODAL POPUP FORM ------- */
 .modal_popup{
         max-width: 100%;
@@ -702,9 +704,12 @@ input[type=submit]{
         .active .request_purposal{
                 display: none;
                 }
-                .form_btn2{
-                        display: none;
-                }    
+        .form_btn2{
+                display: none;
+        }    
+        .mobile-menu{
+                display: block;
+        }
         .mobil-menu-hamburger {
                 width: 32px;
                 height: 32px;
@@ -715,6 +720,7 @@ input[type=submit]{
                 right: 0px;
                 top: 27px;
                 z-index: 9999;
+                
         }
         .mobil-menu-hamburger div{
                 position: relative;
