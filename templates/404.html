@@ -1,0 +1,53 @@
+{% extends 'templates/base.html' %}
+{% load static %}
+{% block title %} About Us {% endblock %}
+
+{% block pagecss %}
+<link rel="stylesheet" href="{% static 'assets/css/about.css' %}">
+{% endblock %}
+
+{% block page %}
+    <!--HERO SECTION -->
+    <section class="hero_section">
+     <!-- header text -->
+     <div class="workflow_header_text">
+        <h2>404 - Page not Found....</h2>
+    </div>
+    </section>
+
+
+
+
+    <!-- js for menu  -->
+    <script src="assets/jquery/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function(){
+     
+                        // js for for popup form
+        $(".form_btn").click(function(){
+            $('#form_content').show();
+        });
+        //close button
+        $('.close_btn').click(function(){
+            $('#form_content').hide();
+        });
+
+        //image hover  
+        $('.links').hide();
+       /* $('.igal').mouseenter(function(){
+            $('.igal_links').show();
+        });
+        $('.igal').mouseleave(function(){
+            $('.igal_links').hide();
+        });
+
+        $('.ron_img').mouseenter(function(){
+            $('.ron_links').show();
+        })
+        $('.ron_img').mouseleave(function(){
+            $('.ron_links').hide();
+        }); */
+          });
+       </script>
+
+       {% endblock %}

@@ -14,5 +14,5 @@ urlpatterns=[
     path('post<int:id>/', SingleBlog.as_view() , name='post'),
     path('privacy-Policy/' , Privacy.as_view(), name='privacy'),
     path('terms-and-conditions/', Term_and_Conditions.as_view(), name='terms'),
-    path(r'^tinymce/', include('tinymce.urls')),
+    path('tinymce/', include('tinymce.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

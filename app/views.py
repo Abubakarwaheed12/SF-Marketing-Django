@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render , redirect
 from django.views import View
 from django.views.generic.base import TemplateView
 from django.views.generic import ListView
@@ -111,7 +111,7 @@ class Contact(TemplateView  , ListView):
             
             
 
-        return render(request, 'templates/index.html')
+        return redirect(f'{self.request.path_info}')
     
     
 
@@ -169,3 +169,8 @@ class Term_and_Conditions(View):
         context={}
         
         return render(request, self.template_name)
+    
+    
+# 404 Page 
+def error_404(request , exception):
+    return render(request, 'templates/404.html')
