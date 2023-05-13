@@ -130,6 +130,11 @@ display:block;
         position: absolute;
         bottom: 30px;
         right: 19px;
+        z-index:999999;
+        position:fixed;
+        border-radius: 40px;
+    	border: 1px solid white;
+    	background-color:white;
     }
     .chat_wp a img {
         width: 100%;
