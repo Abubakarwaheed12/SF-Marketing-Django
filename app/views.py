@@ -101,11 +101,15 @@ class Contact(TemplateView  , ListView):
         
         name=request.POST.get('name')
         email=request.POST.get('email')
+        web_url=request.POST.get('web')
+        budget=request.POST.get('budget')
+        serv=request.POST.get('serv')
         message=request.POST.get('message')
         
-        print(name , email , message)
+
+        print(name , email , message , web_url , budget , serv)
         if name and email:
-            contacts.objects.create(name=name , email=email , message=message)
+            contacts.objects.create(name=name , email=email ,website_url=web_url, budget=budget, service_of_interest=serv , message=message)
             print('message sent successfully ...!!')
             messages.success(request, 'Form Submitted Successfully...')
             

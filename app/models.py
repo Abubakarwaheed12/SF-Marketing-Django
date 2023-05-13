@@ -18,14 +18,14 @@ class Testimonials(models.Model):
 
 # Contact Form
 class Contact(models.Model):
-    name=models.CharField(max_length=200)
-    email=models.EmailField()
-    message=models.CharField(max_length=2000)
-    website_url=models.CharField(max_length=200)
-    budget=models.CharField(max_length=200)
-    service_of_interest=models.CharField(max_length=200)
+    name=models.CharField(max_length=200 , null=True , blank=True)
+    email=models.EmailField( null=True , blank=True)
+    message=models.CharField(max_length=2000 , null=True , blank=True)
+    website_url=models.CharField(max_length=200 , null=True , blank=True)
+    budget=models.CharField(max_length=200 , null=True , blank=True)
+    service_of_interest=models.CharField(max_length=200 , null=True , blank=True)
 
-    created_at=models.DateTimeField(auto_now_add=True , null=True , blank=True)
+    created_at=models.DateTimeField(auto_now_add=True , null=True , blank=True )
     updated_at=models.DateTimeField(auto_now=True , null=True , blank=True)
     
     

@@ -9,7 +9,7 @@ class TestimonialsAdmin(admin.ModelAdmin):
 
 @admin.register(Contact)
 class ContactAdmin(admin.ModelAdmin):
-    list_display=['id' ,'name','email','message']
+    list_display=['id' ,'name','email','website_url', 'budget' , 'service_of_interest' ,'message']
 
 
 @admin.register(Services)
