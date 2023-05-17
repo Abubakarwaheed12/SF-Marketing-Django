@@ -111,7 +111,7 @@ class Contact(TemplateView  , ListView):
         if name and email:
             contacts.objects.create(name=name , email=email ,website_url=web_url, budget=budget, service_of_interest=serv , message=message)
             print('message sent successfully ...!!')
-            messages.success(request, 'Form Submitted Successfully...')
+            messages.success(request, 'Thank You..')
             
             
 

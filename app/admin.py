@@ -20,4 +20,4 @@ class ServicesAdmin(admin.ModelAdmin):
 
 @admin.register(BlogPost)
 class BlogPostAdmin(admin.ModelAdmin):
-    list_display=['title' , 'img', 'content_area' , 'created_at' , 'updated_at']
+    list_display=['title' , 'img' , 'created_at' , 'updated_at']
