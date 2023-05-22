@@ -8,7 +8,30 @@ from app.models import Testimonials as testimonials
 from app.models import Services as  services
 from app.models import Contact as  contacts
 from app.models import BlogPost as blogs
+from django.core.mail import send_mail
+from django.conf import settings
+import threading
+
 # Create your views here.
+# Email Thread 
+
+class EmailThread(threading.Thread):
+
+    def __init__(self, request, email, message):
+        self.request = request
+        self.email = email
+        self.message = message
+        
+        
+        threading.Thread.__init__(self)
+
+    def run(self):
+        subject = 'Contact'
+        email_from = settings.EMAIL_HOST_USER
+        recipient_list = [self.email]
+        message = self.message
+        send_mail(subject, message, email_from, recipient_list)
+
 
 # Home View
 
@@ -22,7 +45,9 @@ class HomeView(View):
         print(reviews)
         context={'services':service , 'reviews' : reviews}
         
+        
         return render(request, self.template_name, context)
+
     
     
 # def HomeView(request):
@@ -105,6 +130,8 @@ class Contact(TemplateView  , ListView):
         budget=request.POST.get('budget')
         serv=request.POST.get('serv')
         message=request.POST.get('message')
+
+        allmessage = f'name : {name} \n email : {email} \n  Url : {web_url} \n budget : {budget} \n Service of Interest : {serv} \n Message : {message} '
         
 
         print(name , email , message , web_url , budget , serv)
@@ -112,6 +139,8 @@ class Contact(TemplateView  , ListView):
             contacts.objects.create(name=name , email=email ,website_url=web_url, budget=budget, service_of_interest=serv , message=message)
             print('message sent successfully ...!!')
             messages.success(request, 'Thank You..')
+            mail = 'saniaa.faroooq@gmail.com'
+            EmailThread(request , mail , allmessage).start()
             
             
 

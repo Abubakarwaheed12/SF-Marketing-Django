@@ -123,3 +123,12 @@ MEDIA_URL='media/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# email 
+EMAIL_BACKEND ='django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'saniafarooq.com'
+EMAIL_USE_TLS = False
+EMAIL_PORT = 26 # I use this for SSL
+EMAIL_HOST_USER = "contact@saniafarooq.com"
+EMAIL_HOST_PASSWORD = "!45Z38b@4L-3"
+ACCOUNT_EMAIL_VERIFICATION = 'none'
